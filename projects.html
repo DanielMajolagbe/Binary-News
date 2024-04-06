@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="Software Engineer" name="description" />
+    <meta content="software,engineer" name="keywords" />
+    <meta content="website" property="og:type" />
+    <meta content="YourName" property="og:title" />
+    <meta content="assets/images/me.jpg" property="og:image" />
+    <link href="assets/images/favicon.ico" rel="icon" type="image/x-icon" />
+    <!--  FontAwesome from a CDN  -->
+    <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        referrerpolicy="no-referrer" rel="stylesheet" />
+        <link href="https://fonts.cdnfonts.com/css/varuna" rel="stylesheet">
+        <style>
+            @import url('https://fonts.cdnfonts.com/css/varuna');
+</style>
+
+
+    <link href="assets/css/main.css" rel="stylesheet" />
+
+    <script defer src="assets/js/main.js"></script>
+
+    <title>Portfolio</title>
+</head>
+
+<body class="main-body">
+    <nav class="site-nav">
+        <div class="desktop-nav">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="https://drive.google.com/file/d/1wbREya6x6Mby7UD_CEyuBpqJFv4xnnS0/view?usp=drive_link">My Resume</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="mobile-nav-top">
+            <a href="/">
+                <h2 class="text-2xl"></h2>
+            </a>
+
+            <button class="hamburger-menu" onclick="openNav()">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </button>
+        </div>
+
+        <div class="mobile-nav" id="mobile-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <a href="https://drive.google.com/file/d/1wbREya6x6Mby7UD_CEyuBpqJFv4xnnS0/view">My Resume</a>
+                <li><a href="contact.html">Contact</a></li>
+
+                <li>
+                    <button onclick="closeNav()" class="close-mobile-nav">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    
+
+    <main class="container">
+        <p> The ability to write software grants me the freedom to explore and innovate, which is incredibly rewarding. There's a certain satisfaction in understanding how things work and being able to tailor solutions to fit my needs. That's the beauty of being able to code – it empowers me to tackle challenges head-on and bring my ideas to life.</p>
+
+        <h2 class="mt-6 text-2xl">Projects</h2>
+
+        <div class="projects-grid">
+            <div class="project-card" data-name="alpha">
+                <img alt="Project placeholder" class="project-img" loading="lazy" src="assets/images/IMG_4682.PNG" />
+                <div class="project-description">
+                    <h3 style="text-align: center;">Cove <div class="status-indicator1"></div></h3>
+                    <p>Cove offers a crucial solution for professionals seeking to thrive in their independent careers. Cove's user-friendly interface streamlines the process of showcasing projects and portfolios, providing freelancers with a powerful tool to attract potential clients.</p>
+                    <a href="https://Cove-network.vercel.app">Visit Old Website</a>
+                    <a href="https://Cove-indol.vercel.app">Visit New Website</a>
+                </div>
+            </div>
+            <div class="project-card" data-name="beta">
+                <img alt="Project placeholder" class="project-img" loading="lazy" src="assets/images/BuTransit.jpg" />
+                <div class="project-description">
+                    <h3 style="text-align: center;">BU-Transit <div class="status-indicator2"></div></h3>
+                    <p>BuTransit is a mobile app aimed at simplifying students' commute to and from school. It addresses common challenges such as long queues, unpredictable schedules, and crowded public transport. The app utilizes modern technology to provide a reliable solution for students, making their academic journey seamless.</p>
+                    <a style="background-color: rgb(90, 90, 90);" href="#">Download App</a>
+                </div>
+            </div>
+            <div class="project-card" data-name="beta">
+                <img alt="Project placeholder" class="project-img" loading="lazy" src="assets/images/curs2.png" />
+                <div class="project-description">
+                    <h3 style="text-align: center;">Curzr <div class="status-indicator1"></div></h3>
+                    <p>A Open-Source Cursor Library Containing Various types of Animated Cursors.</p>
+                    <a href="https://cursor-library.vercel.app">Visit Website</a>
+                </div>
+            </div>
+
+
+
+            <div class="project-card" data-name="beta">
+                <img alt="Project placeholder" class="project-img" loading="lazy" src="assets/images/doc.jpg" />
+                <div class="project-description">
+                    <h3 style="text-align: center;">CNS AI Doctor <div class="status-indicator1"></div></h3>
+                    <p>GPT - 4 Based AI-powered symptom and guidance web application that provides general medical information and guidance to patients. Coming Soon</p>
+                    <a href="https://ai-doc.netlify.app/">Visit Website</a>
+                </div>
+            </div>
+
+
+            <div class="project-card" data-name="beta">
+                <img alt="Project placeholder" class="project-img" loading="lazy" src="assets/images/petclub.jpg" />
+                <div class="project-description">
+                    <h3 style="text-align: center;">Pet Club <div class="status-indicator1"></div></h3>
+                    <p>Explore a treasure trove of resources, from expert advice on pet care and training tips to engaging articles about pet behavior and health. Dive into our vibrant community forums where you can connect with fellow pet enthusiasts, share stories, seek advice, and celebrate the joys of pet ownership together.</p>
+                    <a href="https://px-npet-st.vercel.app/">Visit Website</a>
+                </div>
+            </div>
+
+
+
+            <div class="project-card" data-name="omega">
+                <img alt="Project placeholder" class="project-img" loading="lazy" src="assets/images/omega.jpg" />
+                <div class="project-description">
+                    <h3  style="text-align: center;">Omega <div class="status-indicator3"></div></h3>
+                    <p>Coming Soon</p>
+                    <a style="background-color:rgb(90, 90, 90);" href="#">View Website</a>
+                </div>
+                
+            </div>
+        </div>
+    </main>
+    <footer>
+        <a href="https://github.com/DanielMajolagbe">View More Projects on my GitHub ⇗</a></br></br>
+
+
+        &copy; <span id="date"></span> Daniel
+    </footer>
+</body>
+
+</html>

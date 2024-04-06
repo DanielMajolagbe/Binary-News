@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <script>
+        // Function to save email to JSON database
+        function saveEmail() {
+            var email = document.getElementById("email").value;
+            if (email.trim() === "") {
+                alert("Please enter a valid email address.");
+                return;
+            }
+    
+            // Check if JSON database exists in localStorage
+            var emails = localStorage.getItem("newsletterEmails");
+            if (emails === null) {
+                // If not exists, create an empty array
+                emails = [];
+            } else {
+                // If exists, parse the JSON
+                emails = JSON.parse(emails);
+            }
+    
+            // Add new email to the array
+            emails.push(email);
+    
+            // Save the updated array back to localStorage
+            localStorage.setItem("newsletterEmails", JSON.stringify(emails));
+    
+            alert("Thank you for subscribing!");
+            // You may redirect the user to a thank you page or perform other actions here
+        }
+    </script>
+
+  
+    <meta charset="UTF-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="Software Engineer" name="description" />
+    <meta content="software,engineer" name="keywords" />
+    <meta content="website" property="og:type" />
+    <meta content="YourName" property="og:title" />
+    <meta content="assets/images/images.jpg" property="og:image" />
+    <link href="assets/images/favicon.ico" rel="icon" type="image/x-icon" />
+    <!--  FontAwesome from a CDN  -->
+    <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        referrerpolicy="no-referrer" rel="stylesheet" />
+        <link href="https://fonts.cdnfonts.com/css/varuna" rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/Telegraf" rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/inter" rel="stylesheet">
+
+        <style>
+            @import url('https://fonts.cdnfonts.com/css/inter');
+            @import url('https://fonts.cdnfonts.com/css/varuna');
+            @import url('https://fonts.cdnfonts.com/css/satoshi');
+            @import url('https://fonts.cdnfonts.com/css/Telegraf');
+</style>
+
+
+    <link href="assets/css/main.css" rel="stylesheet" />
+
+    <script defer src="assets/js/main.js"></script>
+
+    <title>The Binary News Blog</title>
+</head>
+
+<body class="main-body">
+    <nav class="site-nav">
+        <div class="desktop-nav">
+            <a href="index.html">← Portfolio</a></br>
+            <a target="_blank">Creator Mode </a>
+            
+        </div>
+      
+
+        
+    </nav>
+
+    
+
+    <main class="container">
+        
+
+        <h2 class="mt-6 text-2xl">BINARY NEWS</h2> </br>
+
+
+        <p style="text-align: center;">Your go-to source for coding insights, project inspiration, and the latest tech news to fuel your programming journey.</p>
+    
+        <div class="projects-grid">
+            <div class="project-card" data-name="alpha">
+                <img alt="Project placeholder" class="project-img" loading="lazy" src="assets/images/Recat.jpg" />
+                <div class="project-description">
+                    <h3 style="text-align: center;">10 React Projects to Build To Impress Your Employer (With Source Code) </h3>
+                    <p>The blog explores the transformative power of mindfulness in daily life.React is an open-source front-end JavaScript library maintained by a community of a group of developers and Meta. React is primarily used for building application UI.</p>
+                    <a href="https://binarynews.notion.site/10-React-Projects-to-Build-To-Impress-Your-Employer-With-Source-Code-b578d54ce06d4e2d838080e022cf2113?pvs=4">Explore  →</a>
+                </div>
+            </div>
+            <div class="project-card" data-name="beta">
+                <img alt="Project placeholder" class="project-img" loading="lazy" src="assets/images/Framer.png" />
+                <div class="project-description">
+                    <h3 style="text-align: center;">100 Free Website Templates on Framer</h3>
+                    <p>Find the best free templates, customize easily and create a professional website without cost. Pick from various designs and features. All templates are HTML, responsive & browser-friendly. Explore & Build stunning sites with top-notch Framer templates..</p>
+                    <a href="https://www.framer.com/free-website-templates/">Explore  →</a>
+                </div>
+            </div>
+            <div class="project-card" data-name="omega">
+                <img alt="Project placeholder" class="project-img" loading="lazy" src="assets/images/udemy-free-courses.jpg.webp" />
+                <div class="project-description">
+                    <h3  style="text-align: center;">FREE access to FREE Udemy Courses </h3>
+                    <p>Udemy Courses with 100% discount coupons.
+                        Free Udemy Courses are provided here with certificate of completion.
+                       </p>
+                    <a href="https://t.me/tutorialbar_udemy_coupons">Explore  →</a>
+                </div>
+                
+            </div>
+
+            <div class="project-card" data-name="alpha">
+                <img alt="Project placeholder" class="project-img" loading="lazy" src="assets/images/Airdrops.jpg" />
+                <div class="project-description">
+                    <h3 style="text-align: center;">An Extremely Detailed Airdrop Tracker Application</h3>
+                    <p>
+                        Are you interested in earning money from FREE Airdrops? Look no further than our cutting-edge Airdrop Tracker app! Designed with simplicity and effectiveness in mind, our app revolutionizes the way you participate in cryptocurrency airdrops.</p>
+                    <a href="https://airdroptracker.notion.site/0180555ffe5249009c4096f97b2fb046?v=4bafb955f76c403f84564d383965104d">Explore  → </a>
+                </div>
+            </div>
+
+
+            <div class="project-card" data-name="alpha">
+                <img alt="Project placeholder" class="project-img" loading="lazy" src="assets/images/Javascript.avif" />
+                <div class="project-description">
+                    <h3 style="text-align: center;">How to Develop a Number Guessing Game in JavaScript</h3>
+                    <p>
+                        "Embark on a Journey of Learning JavaScript Fundamentals by Crafting Your Own Number Guessing Game: A Step-by-Step Guide to Building Engaging User Experiences and Enhancing Your Programming Skills.</p>
+                    <a href="https://blog.shubhamlashkan.com/how-to-develop-a-number-guessing-game-in-javascript">Explore  → </a>
+                </div>
+            </div>
+
+            
+
+            <div class="project-card" data-name="alpha">
+                <img alt="Project placeholder" class="project-img" loading="lazy" src="assets/images/wp8778404-dark-code-wallpapers.jpg" />
+                <div class="project-description">
+                    <h3 style="text-align: center;">12 Projects to Build to Improve Your Coding Skills 👨‍💻 </h3>
+                    <p>Unlock Your Coding Potential with These 12 Engaging Projects: Elevate Your Programming Proficiency Through Hands-On Learning and Practical Application</p>
+
+                      </p>
+                    <a href="https://madza.hashnode.dev/12-projects-to-build-to-improve-your-coding-skills">Explore  → </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+
+    <form id="subscriptionForm" method="post" action="subscribe.php">
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+    </form>
+    
+    
+   
+    <footer>
+     <a style="color: gray;" href="Terms.md"><U>Privacy policy   </u></a></div>  
+
+   
+        &copy; <span id="date"></span> Daniel
+    </footer>
+      
+
+</body>
+
+</html>
